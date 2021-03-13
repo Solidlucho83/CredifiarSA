@@ -1,0 +1,912 @@
+/* :root {
+	--rojo: #E50914;
+	--fondo: #141414;
+} */
+
+
+
+@font-face {
+	font-family: 'credifiar';
+	src: url('../font/Lato-Regular.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 13px;
+}
+
+body{
+	background: white;	
+	font-family: 'credifiar';
+	color: #1B52A2;
+
+}
+
+/* .navbarSup{
+	background: #1B52A2;
+	transition: none;
+	color: #e7dfd5;
+} */
+ .navbarSup{
+	background: rgba(27,82,162,.7);
+	transition: all ease-in-out 300ms;	
+} 
+
+.navbar-brand{
+	width: 12rem;
+	margin-right: 1rem;
+	padding: 0.5rem;
+}
+
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.dropdown-header {
+  font-size: 1.2rem;
+  /* color: #1966e3; */
+  color : #5e6166;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #4883b8;
+}
+
+.btn-outline-light{
+	font-size: 1.2rem;
+}
+
+.btn-outline-light:hover{
+	background-color: #1B52A2;
+	color: white;
+}
+
+#btn-ingreso{
+	border-radius: 2rem;
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+
+/* #link-nav{ */
+#desplegable{	
+	color: white;
+	font-size: 1.5rem; 
+	font-weight: 400;
+}
+
+.bg-desplegable{
+	background: rgba(183,183,183,.9);
+}
+
+.text-credifiar {
+	color: white; 
+}
+
+.bg-credifiar{
+	/* color credifiar logo */
+	background: #1B52A2;	
+}
+
+.iconos-ayuda{
+	color: #1B52A2;
+}
+
+
+.btn-outline-light-top:hover{
+	background-color: #1B52A2;
+	color: white;
+}
+
+.btn-outline-light-middle:hover{
+	background-color: white;
+	color: #1B52A2;
+}
+
+.linea{
+	border-top: 1px solid white;
+}
+
+.alto{
+	height: 100vh;
+}
+
+.alto-trabaja{
+	height: 100vh;
+}
+
+.alto-comercio{
+	height:auto;
+}
+
+.alto-ubicaciones{
+	height:auto;
+}
+
+.alto-consumo{
+	height:100vh;
+}
+
+.alto-empresa{
+	height:100vh;
+	font-size: 1.9rem;
+}
+
+.alto-media-pagina{
+	height: 40vh;
+}
+
+/* llega al final */
+.img-completa{
+	width: 240vh !important;
+	height: 100vh;
+}
+
+.completa{
+	height: 100vh;
+}
+
+.fondo-imagen{
+  
+  background: url(http://credifiar.com.ar/web/imagenes/nuevaweb/imagen.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+}
+
+.fondo-imagen-s{
+  
+	background: url() no-repeat center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  height: 100%;
+	  width: 100% ;
+	  text-align: center;
+  }
+
+.bg-transparente{
+	background: rgba(183,183,183,.3);
+}
+
+.m-superior{
+	padding-top: 12rem;
+}
+
+.texto-empresa{
+	color: white;
+	font-size: 1.7rem;
+}
+.bg-empresa{
+	background: rgba(110, 111, 175, 0.6);
+}
+
+.counter{	
+	font-size: 4rem;
+  }
+
+ .comercial-titulo{
+	 font-size: 3.2rem;
+ } 
+
+ .m-superior-medio{
+	padding-top: 7rem;
+ }
+
+.detalle-locales{
+	display: none;
+	font-size: 1.4rem;
+}
+
+.detalle-locales-ver{
+	display: block;
+}
+
+.list-group-item{
+	border-radius: 2rem;
+	border: 2px solid;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #1B52A2;
+}
+/* CAROUSEL */
+.carousel-item img {
+	width: 240vh !important;
+	height: 100vh;
+}
+
+/* posicion del caption */
+.carousel-caption {
+	width: auto;
+	z-index: 10; 
+	color: #1B52A2;
+	top: 20%;
+	left: 10%;
+	/*	text-align: center;
+	 bottom: auto;  */
+	text-align: start;
+	bottom: 150px;
+}
+
+
+.sintexto{
+	width: auto;
+	z-index: 10; 
+	color: #1B52A2; 
+	top: 60%;
+	left: 10%;
+	text-align: start;
+	bottom: 150px;
+	/* text-align: center;
+	bottom: auto;  */
+}
+
+/* .btn-carousel-caption */
+	.pildora-amarilla{
+	border-radius: 2rem;
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: #1B52A2;
+	background-color: rgb(227, 252, 0);
+	transition: all ease-in-out 300ms;	
+
+}
+
+.pildora-amarilla:hover {
+	border-radius: 1rem;
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: rgb(227, 252, 0);;
+	background-color: #1B52A2 
+}
+
+
+
+.text-carousel-caption{
+	font-size: 1.7rem;
+	margin: 0%;
+}
+
+/* --- PROMOCIONES --- */
+.promociones {
+	background: white;
+	/* border-top: 5px solid #1B52A2; */
+	padding: 0 20px;
+}
+.promociones .titulo {
+	padding: 40px 0;
+	text-align: center;
+	color: #1B52A2;
+	font-family: 'credifiar';
+	font-weight: 300;
+}
+.promociones .galeriaPromociones .contenedor-imagen{
+	margin-bottom: 40px;
+	max-height: 300px;
+	overflow: hidden;
+}
+.promociones .galeriaPromociones .contenedor-imagen a{
+	/* background: #1B52A2; */
+	display: inline-block;
+}
+.promociones .galeriaPromociones .contenedor-imagen:hover img{
+	opacity: .3;
+}
+
+.text-green{
+	color:  rgb(227, 252, 0);
+}
+
+
+.link-slider-index{
+	text-decoration: none;
+	color: white;
+}
+
+.titulo-slider{
+	font-size: 3rem;
+}
+
+.subtitulo-slider{
+	font-size: 2.4rem;
+}
+/* VENTAJAS */
+
+.fondo-ventajas{
+	background: url(../img/1x/PuntosPago.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+}
+
+.cardVentajas , .card-Ventajas{
+	background: white;	
+}
+.card-body{
+	height: auto;
+}
+
+.card-title-ubicaciones{
+	padding: 0 0;
+	text-align: start;
+	color:#1B52A2 ;
+	font-family: 'credifiar';
+	/* font-weight: 300; */
+}
+.card-text-ubicaciones{
+	padding: 0 0;
+	text-align: start;
+	color:#1B52A2 ;
+	font-family: 'credifiar';
+	/* font-weight: 300; */
+}
+
+/* .tituloComercios{
+	font-size: 2.5rem;
+	font-weight: 900;
+	color: #1B52A2 !important;
+} */
+
+.tituloVentajas , .tituloPromociones , .tituloComercios{
+	padding: 10px 0;
+	text-align: center;
+	color:#1B52A2;
+	font-family: 'credifiar';
+	font-size: 2rem;
+	font-weight: 900;
+	/* color: #1B52A2 !important; */
+}
+/* FOOTER */
+.footer {
+  background: #1B52A2;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%; 
+}
+
+.card-title-footer{
+	color: #e7dfd5;
+	font-family: 'credifiar';
+	font-weight: 500;
+	margin-bottom: 2rem;
+}
+.card-text-footer , .btn-footer{
+	font-size:1.1rem;
+	color: white;
+	font-family: 'credifiar';
+	font-weight: 300;	
+	text-decoration: none !important;
+}
+
+.btn-footer:hover{
+	color:rgb(227, 252, 0) !important;
+}
+
+.card-footer{
+	background-color: #1B52A2;
+	/* color: #3da5e2; */
+}
+
+.card-footer-ubicaciones{
+	background: white;
+}
+.tituloCopyright {
+	color: white;
+	font-family: 'credifiar';
+	font-weight: 300;
+	font-size: 0.8rem;
+}
+.nav-link-footer-fin{
+	text-decoration: none !important;
+	padding: 0 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+	color: white;
+	font-family: 'credifiar';
+	font-weight: 700;
+	font-size: .7rem;
+	border-left: 1px solid;
+}
+
+.nav-link-iconos-footer{	
+	color: white;
+}
+
+/* .nav-link-iconos-footer:hover{	
+	color: tomato;
+} */
+
+#legales{
+	height: 4rem;
+	font-size: 0.5rem;
+}
+
+/* <---------------------------------- ESTILOS empresa.html -------------------------------------->*/
+.fondo-imagen-empresa{  
+	background: url(../img/1x/LaEmpresa.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	width: 100% ;
+	text-align: center;
+  }
+
+/* <---------------------------------- ESTILOS turnos.html -------------------------------------->*/
+/* .card-borde-turno{
+	border: 3px solid;
+} */
+
+/* <---------------------------------- ESTILOS comercio.php -------------------------------------->*/
+.card-title-comercio{
+	padding: 0 0;
+	text-align: center;
+	color: black;
+	font-family: 'credifiar';
+	font-weight: 300;
+}
+.card-text-comercio{
+	padding: 0 0;
+	text-align: center;
+	color: black;
+	font-family: 'credifiar';
+	font-weight: 300;
+}
+.card-footer-comercio{
+	background: white;
+}
+
+.fondo-adheri-comercio{  
+	background: url(../img/1x/ComerciosAdherirse.jpg) no-repeat center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  height: 100%;
+	  width: 100% ;
+	  text-align: center;
+  }
+
+  .fondo-planes-comercio{  
+	background: url(../img/1x/PlanesCuotas\ .jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	width: 100% ;
+	text-align: center;
+  }
+
+  .bg-transparente-comercio{
+	background: rgba(255,255,255,.7);
+}
+.btn-comercio-ingreso{
+	background: #1B52A2;
+	border-color: #1B52A2;
+	/* AZUL: LOGO : 1B52A2*/
+}
+.btn-comercio-ingreso:hover{
+    color:white;
+	background-color:#2362BE;
+	border-color: #2362BE;
+  }
+
+
+/* <---------------------------------- ESTILOS tarjeta.php -------------------------------------->*/
+.fondo-imagen-tarjeta{
+  	background: url(../img/1x/IngresaCuenta.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	width: 100% ;
+	text-align: center;
+}
+
+/* #requisitos_tarjeta{
+	height: 70vh;
+	margin-top: 9rem;
+} */
+
+.fondo-requisito{
+	background: url(../img/1x/RequisitosTarjeta.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	width: 100% ;
+	text-align: center;
+}
+
+  .fondo-imagen-tarjeta-comercios{
+  
+	background: url(../img/1x/BuscarComercios.jpg) no-repeat center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  height: 100%;
+	  width: 100% ;
+	  text-align: center;
+  }
+
+  .bg-claro-transparente{
+	background: rgba(255,255,255,.6);
+	/* color: #e9ecef; */
+}
+
+.fondo-imagen-beneficios {
+	background: url(../img/index/3.png) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	width: 100% ;
+	text-align: center;
+} 
+/* posicion del caption */
+.carousel-caption-tarjeta {
+	width: auto;
+	z-index: 10; 
+	color: #1B52A2;
+	top: 0;
+	left: 0;
+	/*	text-align: center;
+	 bottom: auto;  */
+	text-align: start;
+}
+
+
+.texto-banners{
+	width: auto;
+	z-index: 10; 
+	color: #1B52A2;
+	top: 20%;
+	left: 30%;
+	font-size: 2rem;
+	text-align: justify;
+	/*	bottom: auto;  */
+}
+
+.texto-requisitos{
+	padding-left: 0	;
+	color: #1B52A2;
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 8rem;
+	/*	bottom: auto;  */
+}
+
+  /* <---------------------------------- ESTILOS prestamos_personales.php -------------------------------------->*/
+.fondo-imagen-prestamos {
+  
+	background: url(../img/index/4.png) no-repeat center;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  height: 100%;
+	  width: 100% ;
+	  text-align: center;
+	  
+  }
+
+   /* <---------------------------------- ESTILOS credito_consumo.php -------------------------------------->*/
+.card-title-credito-consumo{
+	padding: 0 0;
+	text-align: center;
+	color: black;
+	font-family: 'credifiar';
+	font-weight: 300;
+}
+.card-footer-credito-consumo{
+	background: white;
+}
+
+.fondo-credito-consumo{
+	background: url(../img/comerciosAmigos.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+}
+
+/* <---------------------------------- ESTILOS contacto.php -------------------------------------->*/
+
+.fondo-imagen-contacto{
+	background: url(../img/1x/Contactos.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+}
+
+/* <---------------------------------- ESTILOS envia cv.php -------------------------------------->*/
+.fondo-imagen-enviaCV{
+	background: url(../img/1x/trabajaConNosotros.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+}
+
+/* <---------------------------------- ESTILOS sucursal.php -------------------------------------->*/
+
+.fondo-imagen-sucursales {
+	background: url(../img/1x/Sucursales.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+}
+
+.locales{
+	display: block;
+}
+/* <---------------------------------- ESTILOS centro_ayuda.php -------------------------------------->*/
+.card-title-credito-centro-ayuda{
+	padding: 0 0;
+	text-align: center;
+	color: black;
+	font-family: 'credifiar';
+	font-weight: 300;
+}
+.card-footer-credito-centro-ayuda{
+	background: white;
+}
+.card-body-centro-ayuda{
+	text-align: center;
+}
+
+/* *********************************************************************************
+ ***********************************************************************************
+ MEDIAQUERIES
+ ***********************************************************************************
+ ***********************************************************************************/
+/*min-width: 768px */
+@media (min-width: 601px) and (max-width: 1199px) {
+	.alto-comercio{
+		height: 100vh;
+	}
+	
+	.m-superior{
+	padding-top: 2rem;
+	}
+	.alto-consumo{
+		height:100vh;
+	}
+
+	.alto-media-pagina{
+		height: auto;
+	}
+
+	.m-superior-empresa{
+		padding-top: 8rem;
+	}
+
+	.numeritos{	
+		font-size: 1rem;
+	}
+	 
+ }
+
+
+@media screen and (max-width: 600px) {
+
+	.alto{
+		height: 100vh;
+	}
+
+	.alto-comercio{
+		height:auto;
+	}
+
+	.alto-trabaja{
+		height: auto;
+	}
+
+	.alto-consumo{
+		height:auto;
+	}
+
+	.alto-media-pagina{
+		height: auto;
+	}
+
+	.navbarSup{
+		position: relative;
+		background: #1B52A2;
+		transition: none;
+	}
+
+	.m-superior {
+		padding-top: 2rem;
+	}
+
+	.m-superior-medio{
+		padding-top: 2rem;
+	 }
+
+	.locales{
+		display: none;
+	}
+
+	.fondo-credito-consumo{
+		background: url(../img/comerciosAmigos_giro.jpg) no-repeat center;
+		background-size: cover;
+		height: 100%;
+		width: 100% ;
+		text-align: center;
+	}
+
+	.panel-title a{
+		color: #1B52A2;
+	}
+
+	.titulo-slider{
+		font-size: 1.5rem;
+	}
+	.subtitulo-slider{
+		font-size: 1.5rem;
+	}
+
+	.carousel-caption{
+		width: auto;
+		z-index: 10; 
+		color: #1B52A2; 
+		text-align: start;
+		top: 0;
+		left: 0;
+		bottom: auto; 
+	}
+
+	.text-carousel-caption{
+		font-size: 1rem;
+		margin: 0%;
+	}
+
+	.sintexto{
+		width: auto;
+		z-index: 10; 
+		color: #1B52A2; 
+		top: 80%;
+		left: 5%;
+		text-align: start;
+		/* bottom: 150px; */
+		/* text-align: center; */
+		bottom: auto;
+	}
+
+	.card-title-ubicaciones{
+		padding: 0 0;
+		text-align: start;
+		color:#1B52A2 ;
+		font-family: 'credifiar';
+		font-weight: 900;
+	}
+	.card-text-ubicaciones{
+		padding: 0 0;
+		text-align: start;
+		color:#1B52A2 ;
+		font-family: 'credifiar';
+		font-weight: 900;
+	}
+
+	.card-border{
+		border: 3px solid;
+	}
+
+	/* .card-borde-turno{
+		border: 1px ;
+		border: groove;
+	} */
+
+	/* CAROUSEL */
+	.carousel-item img{
+		width: 100%;
+		height: 100%;
+	}
+
+	.text-green {
+    	margin-left: 10rem;
+    	font-size: 0.8rem;	
+	}
+
+	.texto-requisitos{
+		padding-left: 4rem	;
+		color: #1B52A2;
+		font-size: 1.5rem;
+		text-align: top;
+		margin-top: 4rem;
+		top:0;
+	}
+		
+	.alto-empresa{
+		height:100vh;
+	}
+
+	.fondo-requisito{
+		background: url(../img/1x/RequisitosTarjetaMobile.jpg);
+	}
+
+	.fondo-imagen-tarjeta-comercios{  
+		background: url(../img/1x/BuscarComerciosMobilecopia.jpg);
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 100%;
+		width: 100% ;
+		text-align: center;
+	}
+
+	.fondo-imagen-tarjeta{  
+		background: url(../img/1x/IngresaCuentaMobile.jpg) ;
+	}
+
+	.fondo-imagen-sucursales {
+		background: url(../img/1x/SucursalesMobile.jpg);
+	}
+
+	.fondo-imagen-enviaCV{
+		background: url(../img/1x/trabajaConNosotrosMobile.jpg);
+	}
+
+	.fondo-imagen-empresa{  
+		background: url(../img/1x/LaEmpresaMobile.jpg);	
+	}
+
+	.fondo-imagen-contacto{
+		background: url(../img/1x/ContactoMobile.jpg)
+	}
+
+	.fondo-imagen-beneficios {
+		background: url(../img/index/8.png);
+	}	
+
+	.fondo-imagen-prestamos {
+  		background: url(../img/index/9.png);
+	}
+
+	.fondo-adheri-comercio{  
+		background: url(../img/1x/ComerciosAdherirseMobile.jpg);
+	}
+
+	.fondo-planes-comercio{  
+		background: url(../img/1x/PlanesCuotasMobile.jpg);
+	}
+	.texto-banners{
+		text-align: center;
+		font-size: 1rem;
+	}
+}
+

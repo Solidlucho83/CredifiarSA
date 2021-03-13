@@ -1,0 +1,764 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Credifiar S.A.</title>
+<style type="text/css">
+  .mi-menu  {
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 0 auto; /* si queremos centrarlo */
+    padding: 0;
+    /* la altura y su ancho dependerán de los textos */
+    height: 40px; 
+    width: 800px;
+    /* el color de fondo */
+    background: #555;
+    background: -moz-linear-gradient(#555,#222);
+    background: -webkit-linear-gradient(#555,#222);
+    background: -o-linear-gradient(#555,#222);
+    background: -ms-linear-gradient(#555,#222);
+    background: linear-gradient(#555,#222);
+  }
+
+  /* si es necesario, evitamos que Blogger de problemas con los saltos de línea cuando escribimos el HTML */
+  .mi-menu  br { display:none; }
+
+  /* cada item del menu */
+  .mi-menu  li {
+    display: block;
+    float: left; /* la lista se ve horizontal */
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .mi-menu li a {
+    border-left: 1px solid #000;
+    border-right: 1px solid #666;
+    color: #EEE;
+    display: block;
+    font-family: Tahoma;
+    font-size: 13px;
+    line-height: 28px;
+    padding: 0 14px;
+    margin: 6px 0;
+    text-decoration: none;
+    /* animamos el cambio de color de los textos */
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+  }
+  /* eliminamos los bordes del primer y el último */
+  .mi-menu li:first-child a { border-left: none; }
+  .mi-menu li:last-child a{ border-right: none; }
+  /* efecto hover cambia el color */
+  .mi-menu li:hover > a { color: #A6BC2B; }
+
+  /* los submenús */
+  .mi-menu ul {
+    border-radius: 0 0 5px 5px;
+    left: 0;
+    margin: 0;
+    opacity: 0; /* no son visibles */
+    position: absolute;
+    top: 40px; /* se ubican debajo del enlace principal */
+    /* el color de fondo */
+    background: #222;
+    background: -moz-linear-gradient(#222,#555);
+    background: -webkit-linear-gradient(#22,#555);
+    background: -o-linear-gradient(#222,#555);
+    background: -ms-linear-gradient(#222,#555);
+    background: linear-gradient(#222,#555);
+    /* animamos su visibildiad */
+    -moz-transition: opacity .25s ease .1s;
+    -webkit-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+  }
+  /* son visibes al poner el cursor encima */
+  .mi-menu li:hover > ul { opacity: 1; }
+
+   /* cada un ode los items de los submenús */
+  .mi-menu ul li {
+    height: 0; /* no son visibles */
+    overflow: hidden;
+    padding: 0;
+    /* animamos su visibildiad */
+    -moz-transition: height .25s ease .1s;
+    -webkit-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+  }
+  .mi-menu li:hover > ul li {
+    height: 36px; /* los mostramos */
+    overflow: visible;
+    padding: 0;
+  }
+  .mi-menu ul li a {
+    border: none;
+    border-bottom: 0px solid #ccc;
+    margin: 0;
+    /* el ancho dependerá de los textos a utilizar */
+    padding: 5px 20px;
+    width: 150px;
+  }
+  /* el último n otiene un borde */
+  .mi-menu ul li:last-child a { border: none; }
+
+.botonera {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	color: #FFF;
+}
+body {
+	
+}
+.botones_arriba {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	color: #FFF;
+	font-weight: normal;
+}
+.botones_arribaCopia {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	color: #FFF;
+	font-weight: normal;
+}
+.botones_arribaCopia2 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	color: #10549B;
+	font-weight: normal;
+}
+.botones_arribaCopia2Copia2 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	color: #BCC806;
+	font-weight: normal;
+}
+.abajo {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	color: #000;
+	font-weight: normal;
+}
+.abajoCopia {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 22px;
+	color: #000;
+	font-weight: normal;
+}
+.botones_arribaCopiaCopia {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #949B17;
+	font-weight: normal;
+}
+.botones_arribaCopiaAZUL {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 15px;
+	color: #1D5298;
+	font-weight: bold;
+}
+.botonesVERDES {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	font-weight: bold;
+}
+.botonesazul {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 20px;
+	color: #1D5298;
+	font-weight: bold;
+}
+a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+}
+.botonera {	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	color: #FFF;
+}
+.mi-menu {    border-radius: 5px;
+    list-style-type: none;
+    margin: 0 auto; /* si queremos centrarlo */
+    padding: 0;
+    /* la altura y su ancho dependerán de los textos */
+    height: 40px; 
+    width: 820px;
+    /* el color de fondo 'El campo SEXO esta vacío' */
+    background: #555;
+    background: -moz-linear-gradient(#555,#222);
+    background: -webkit-linear-gradient(#555,#222);
+    background: -o-linear-gradient(#555,#222);
+    background: -ms-linear-gradient(#555,#222);
+    background: linear-gradient(#555,#222);
+}
+</style>
+<script  type="text/javascript">
+function formulario(f) {
+		
+    if (f.dni.value == ""){ 
+		alert ('El campo DNI esta vacío');  
+		f.dni.focus(); 
+		return false; 
+	}else if (f.sexo.value == ""){
+		alert ('El campo Sexo esta vacío');  
+		return false;
+	}else if (f.nombre.value == ""){ 
+		alert ('El campo Nombre esta vacío');  
+		f.nombre.focus(); 
+		return false; 
+	}else if (f.apellido.value == ""){ 
+		alert ('El campo Apellido esta vacío');  
+		f.apellido.focus(); 
+		return false;
+	}else if (f.email1.value == ""){
+		alert('El campo Email está vacío');
+		f.email1.focus();
+    	return false; 
+  }else if (f.email2.value == ""){
+    	alert('El campo Confirme Email está vacío');
+    	f.email1.focus();
+    	return false; 
+  }else if (f.email1.value == f.email2.value){     
+	    
+	  if(f.dia.value == 176 || f.dia.value == 182 ){ 
+		  // 	FILTRO DE HORARIO PARA LOS DIAS SABADO
+		  var rango = f.rango.value
+      if(rango == 1 || rango == 2 || rango == 11 || rango == 12 || rango == 13 || rango == 14 || rango == 15 || rango == 16 || rango == 17 || rango == 18 || rango == 19  )
+      {
+
+		  	      alert ('Los turnos disponibles para el día sábado son de 9:00 a 13:00 hs.');  
+		  	      f.rango.focus(); 
+              return false;         
+
+		  }/*else if(f.sucursal.value == 1){
+			        // Para los sabados inhabilitados en Casa Central
+			        alert ('En este día no esta habilitado para atención en Casa Central.');  
+              f.rango.focus(); 
+              
+              //Para los sabados habilitados en Casa Central
+			         //return true;
+			        return false;
+			
+      }else{
+			      //Para el resto de las Sucursales, siempre estan habilitadas los sábados.
+			      return true;
+		  }*/
+	    	
+    }else if(f.dia.value == 176 || f.dia.value == 182){
+		var rango = f.rango.value
+		if(rango == 13 || rango == 14 || rango == 15 || rango == 16 ){
+			alert ('El horario de 08 a 16 esta disponible a partir del Lunes 14 de Diciembre. Seleccione otro horario.');  
+			f.rango.focus(); 
+			return false; 
+		}else{
+			return true;
+		}
+    }else{
+		return true;
+    }  
+	}else{
+		alert('Los emails no coinciden');
+		return false; 
+	}
+}
+
+function validarCorreo1(correo){
+
+    if(correo.indexOf("@") == '-1'){
+        alert("Ingrese un correo valido")
+        this.correo1.focus();
+        return false;}
+}
+function validarCorreo2(correo){
+
+    if(correo.indexOf("@") == '-1'){
+        alert("Ingrese un correo valido")
+        this.correo2.focus();
+        return false;}
+}
+function validarDNI(numero){
+    if (!/^([0-9])*$/.test(numero)){
+		alert("Ingresar solo numeros");
+		this.dni.focus();
+		return false;}
+}
+function mostrar(){
+	var email1 = document.getElementById("email1").value;
+	var email2 = document.getElementById("email2").value;
+	
+	if (email1 == email2){
+       	var dni = document.getElementById("dni").value;
+        var numero = dni.substr(-1);
+        var caja_texto_dia = document.getElementById('dia');
+
+        if(numero == 0  || numero== 1 ){
+            caja_texto_dia.value = 'Lunes 13 de Abril de 2020';
+            cuadroVerde.style.display = "initial";
+        }
+        if(numero == 2  || numero== 3 ){
+            caja_texto_dia.value = 'Martes 14 de Abril de 2020';
+            cuadroVerde.style.display = "initial";
+        }
+        if(numero == 4  || numero== 5 ){
+            caja_texto_dia.value = 'Miercoles 15 de Abril de 2020';
+            cuadroVerde.style.display = "initial";
+        }
+        if(numero == 6  || numero== 7 ){
+            caja_texto_dia.value = 'Jueves 16 de Abril de 2020';
+            cuadroVerde.style.display = "initial";
+        }
+        if(numero == 8  || numero== 9 ){
+            caja_texto_dia.value = 'Viernes 17 de Abril de 2020';
+            cuadroVerde.style.display = "initial";
+        }
+    }else{
+    	alert('Los emails no coinciden');
+    }
+	
+}
+</script>
+</head>
+
+<body topmargin="0" background="imagenes/fondoresumen.jpg">
+<table width="928" border="0" align="center" cellpadding="0" cellspacing="0"  background="imagenes/fondoresumen.jpg">
+  <tr>
+    <td width="90" height="46" align="center" bgcolor="#D6DF20" class="botones_arriba">CLIENTES</td>
+    <td width="90" align="center" class="botones_arriba"><a href="comercio/index.html">COMERCIO</a></td>
+    <td width="354" align="right"><img src="imagenes/preguntas.jpg" width="21" height="21" /></td>
+    <td width="10" align="right">&nbsp;</td>
+    <td width="169" align="left" class="botones_arriba"><a href="preguntas.html">Preguntas Frecuentes</a></td>
+    <td width="31"><img src="imagenes/contacto.jpg" width="21" height="21" /></td>
+    <td width="86" class="botones_arriba"><a href="contacto.html">Contacto</a></td>
+    <td width="24"><img src="imagenes/face.jpg" width="21" height="21" /></td>
+    <td width="74" align="right" class="botones_arriba"><a href="https://www.facebook.com/credifiar" target="_blank">Facebook</a></td>
+  </tr>
+</table>
+
+<table width="928" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="imagenes/barra2.png" width="928" height="170" /></td>
+  </tr>
+</table>
+
+<table width="928" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="817" height="48"><ul class="mi-menu">
+      <li><a href="index.html" target="_parent">INICIO</a></li>
+      <li> <a href="empresa.html" target="_parent"> LA EMPRESA </a>
+        <ul>
+        </ul>
+      </li>
+      <li> <a href="#"> TARJETA DE CRÉDITO</a>
+        <ul>
+          <li><a href="tarjeta_requisitos.html" target="_parent">- Requisitos </a></li>
+          <li><a href="tarjetas_comercios/comercios_tarjeta.pdf" target="_blank">- Comercios Adheridos </a></li>
+          <li><a href="tarjeta_form.html" target="_blank">- Solicitá tu Tarjeta</a></li><li><a href="pago2.html" target="_self">- Lugares de pago</a></li>
+        </ul>
+      </li>
+      <li> <a href="#"> PRÉSTAMOS PERSONALES</a> </li>
+      <li> <a href="#"> CRÉDITOS DE CONSUMO</a>
+        <ul>
+          <li><a href="requisitos_cre_consumo.html" target="_parent">- Requisitos </a></li>
+          <li><a href="consumo_adheridos.html" target="_parent">- Comercios Adheridos </a></li>
+          <li><a href="pago.html" target="_parent">- Lugares de Pago </a></li>
+        </ul>
+      </li>
+      <li> <a href="promociones.html" target="_parent"> PROMOCIONES</a> </li>
+    </ul></td>
+    <td width="111" align="center" background="imagenes/clientes.jpg" class="botonera"><a href="https://www.infotarjetas.com.ar/login.aspx?tid=28" target="_blank">CLIENTES</a></td>
+  </tr>
+</table>
+
+<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+<table width="1000" height="40" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="51" align="right" ><img src="imagenes/flecha.png" width="25" height="26" /></td>
+    <td width="193" align="center" ><span class="botonesVERDES">Contacto</span></td>
+    <td width="756" align="left" >&nbsp;</td>
+  </tr>
+</table>
+
+<table width="799" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="799" align="center">
+	<form id="form1" name="form1" method="post" action="procesarTurnosnuevo.php" onsubmit="return formulario(this)">
+        <table width="800" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="4" align="left">
+            	<table width="736" border="0" cellpadding="0" cellspacing="0">
+	              <tr>
+	                <td width="53" align="right"><img src="imagenes/flecha2.png" width="25" height="26" /></td>
+	                <td width="683"><strong class="botones_arribaCopiaCopia">Completá los datos y registrá tu turno de visita!</strong></td>
+	              </tr>
+            	</table>
+            </td>
+          </tr>
+		  <tr>
+            
+		  </tr>
+		
+		<table align="center">  <!-- TABLA EXTERNA -->
+			<tr>
+			<td>
+                <table>  <!-- TABLA INTERNA -->
+                
+                <tr class="abajo">
+	                <td><p style="text-align:left;">Primer Nombre </p></td>
+	                <td><input type="text" name="nombre" id="nombre" onChange="validarNombre(this.value)" /> </td>
+                </tr>
+                
+                <tr class="abajo">
+	                <td><p style="text-align:left;">Apellido </p></td>
+	                <td><input type="text" name="apellido" id="apellido" onChange="validarApellido(this.value)" /></td>
+                </tr>
+                
+                <tr class="abajo">
+	                <td><p style="text-align:left;">DNI </p></td>
+	                <td><input type="text" name="dni" id="dni" onChange="validarDNI(this.value)" /></td>
+                </tr>
+              
+              	<tr class="abajo">
+	                <td><p style="text-align:left;">Email </p></td>
+	                <td><input type="text" name="email1" id="email1" onChange="validarCorreo1(this.value)"/></td>
+                </tr>
+                
+                <tr class="abajo">
+	                <td><p style="text-align:left;">Confirme Email </p></td>
+	                <td><input type="text" name="email2" id="email2" onChange="validarCorreo2(this.value)"/></td>
+                </tr>
+                
+                <tr class="abajo">
+                	<td><p style="text-align:left;">Sexo</p></td>
+                	<td><select name="sexo">
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                    	</select>
+                    </td>
+                </tr>
+                                
+                <tr class="abajo">
+                	<td><p style="text-align:left;">Sucursal</p></td>
+                	<td>
+                		<select name="sucursal">
+                        <option value="1">Casa Central</option>
+                        <option value="2">Sucursal Aristobulo del Valle</option>
+                        <option value="3">Esperanza</option>
+                        <option value="4">Ceres</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr class="abajo">
+                	<td><p style="text-align:left;">Días disponibles</p></td>
+                	<td>
+                		<select name="dia">
+                       <!-- <option value="1">Lunes 20 de Abril</option>  
+                        <option value="2">Martes 21 de Abril</option> 
+                        <option value="3">Miércoles 22 de Abril</option> 
+                        <option value="4">Jueves 23 de Abril</option> 
+                        <option value="5">Viernes 24 de Abril</option>
+                        <option value="6">Lunes 27 de Abril</option>
+                        <option value="7">Martes 28 de Abril</option>
+                        <option value="8">Miércoles 29 de Abril</option>
+                        <option value="9">Jueves 30 de Abril</option>
+						<option value="10">Lunes 4 de Mayo</option>  
+                        <option value="11">Martes 5 de Mayo</option> 
+                        <option value="12">Miércoles 6 de Mayo</option> 
+                        <option value="13">Jueves 7 de Mayo</option> 
+                        <option value="14">Viernes 8 de Mayo</option>
+                        <option value="15">Sábado 9 de Mayo</option>
+						<option value="16">Lunes 11 de Mayo</option>   
+                        <option value="17">Martes 12 de Mayo</option>
+                        <option value="18">Miércoles 13 de Mayo</option>  
+                        <option value="19">Jueves 14 de Mayo</option>
+                        <option value="20">Viernes 15 de Mayo</option>
+                        <option value="21">Sábado 16 de Mayo</option> 
+						<option value="22">Lunes 18 de Mayo</option>  
+                        <option value="23">Martes 19 de Mayo</option> 
+                        <option value="24">Miércoles 20 de Mayo</option> 
+                        <option value="25">Jueves 21 de Mayo</option>
+                        <option value="26">Viernes 22 de Mayo</option>
+						<option value="27">Sábado 23 de Mayo</option> 
+						<option value="28">Martes 26 de Mayo</option> 
+                        <option value="29">Miércoles 27 de Mayo</option>
+						<option value="30">Jueves 28 de Mayo</option>
+                        <option value="31">Viernes 29 de Mayo</option>
+						<option value="32">Sábado 30 de Mayo</option>
+						<option value="33">Lunes 01 de Junio</option>  
+                        <option value="34">Martes 02 de Junio</option> 
+                        <option value="35">Miércoles 03 de Junio</option> 
+                        <option value="36">Jueves 04 de Junio</option>
+                        <option value="37">Viernes 05 de Junio</option>
+                        <option value="38">Sabado 06 de Junio</option>
+						<option value="39">Lunes 08 de Junio</option>  
+                        <option value="40">Martes 09 de Junio</option>
+                        <option value="41">Miércoles 10 de Junio</option> 
+                        <option value="42">Jueves 11 de Junio</option>
+                        <option value="43">Viernes 12 de Junio</option>
+                        <option value="44">Sabado 13 de Junio</option>
+						<option value="45">Martes 16 de Junio</option>
+                        <option value="46">Miércoles 17 de Junio</option>
+                        <option value="47">Jueves 18 de Junio</option>
+                        <option value="48">Viernes 19 de Junio</option>
+                        <option value="49">Sabado 20 de Junio</option>
+						<option value="50">Lunes 22 de Junio</option>
+						<option value="51">Martes 23 de Junio</option>
+                        <option value="52">Miércoles 24 de Junio</option>
+                        <option value="53">Jueves 25 de Junio</option>
+                        <option value="54">Viernes 26 de Junio</option>
+						<option value="55">Lunes 29 de Junio</option>
+						<option value="56">Martes 30 de Junio</option>
+                        <option value="57">Miércoles 01 de Julio</option>
+                        <option value="58">Jueves 02 de Julio</option>
+                        <option value="59">Viernes 03 de Julio</option>
+						<option value="61">Sábado 04 de Julio</option>
+						<option value="62">Lunes 06 de Julio</option>
+						<option value="63">Martes 07 de Julio</option>
+                        <option value="64">Miércoles 08 de Julio</option>
+                        <option value="65">Jueves 09 de Julio</option>
+                        <option value="66">Viernes 10 de Julio</option> 
+						<option value="67">Sábado 11 de Julio</option>
+						<option value="68">Lunes 13 de Julio</option>
+						<option value="69">Martes 14 de Julio</option>
+						<option value="70">Miércoles 15 de Julio</option>
+						<option value="71">Jueves 16 de Julio</option>
+						<option value="72">Viernes 17 de Julio</option> 
+						<option value="73">Sábado 18 de Julio</option>
+						<option value="74">Lunes 20 de Julio</option>
+						<option value="75">Martes 21 de Julio</option>
+						<option value="76">Miércoles 22 de Julio</option>
+						<option value="77">Jueves 23 de Julio</option>
+						<option value="78">Viernes 24 de Julio</option>
+						<option value="79">Sábado 25 de Julio</option>
+						<option value="80">Lunes 27 de Julio</option>
+						<option value="81">Martes 28 de Julio</option>
+						<option value="82">Miércoles 29 de Julio</option>
+						<option value="83">Jueves 30 de Julio</option>
+						<option value="84">Viernes 31 de Julio</option>
+						<option value="85">Sábado 01 de Agosto</option>
+						<option value="86">Lunes 03 de Agosto</option>
+						<option value="87">Martes 04 de Agosto</option>
+						<option value="88">Miércoles 05 de Agosto</option>
+						<option value="89">Jueves 06 de Agosto</option>
+						<option value="90">Viernes 07 de Agosto</option>
+						<option value="91">Sábado 08 de Agosto</option>
+						<option value="92">Lunes 10 de Agosto</option>
+						<option value="93">Martes 11 de Agosto</option>
+						<option value="94">Miércoles 12 de Agosto</option>
+						<option value="95">Jueves 13 de Agosto</option>
+						<option value="96">Viernes 14 de Agosto</option>
+						<option value="97">Sábado 15 de Agosto</option>
+						<option value="98">Martes 18 de Agosto</option>
+						<option value="99">Miércoles 19 de Agosto</option>
+						<option value="100">Jueves 20 de Agosto</option>
+						<option value="101">Viernes 21 de Agosto</option>
+						<option value="102">Sábado 22 de Agosto</option>
+						<option value="103">Lunes 24 de Agosto</option>
+						<option value="104">Martes 25 de Agosto</option>
+						<option value="105">Miércoles 26 de Agosto</option>
+						<option value="106">Jueves 27 de Agosto</option>
+						<option value="107">Viernes 28 de Agosto</option>
+						<option value="108">Sábado 29 de Agosto</option>
+						<option value="109">Lunes 31 de Agosto</option>
+						<option value="110">Martes 01 de Septiembre</option>
+						<option value="111">Miércoles 02 de Septiembre</option>
+						<option value="112">Jueves 03 de Septiembre</option>
+						<option value="113">Viernes 04 de Septiembre</option>
+						<option value="114">Sábado 05 de Septiembre</option>
+						<option value="115">Lunes 07 de Septiembre</option>
+						<option value="116">Martes 08 de Septiembre</option>
+						<option value="117">Miércoles 09 de Septiembre</option>
+						<option value="118">Jueves 10 de Septiembre</option>
+						<option value="119">Viernes 11 de Septiembre</option>
+						<option value="120">Sábado 12 de Septiembre</option>
+						<option value="121">Lunes 14 de Septiembre</option>
+						<option value="122">Martes 15 de Septiembre</option>
+						<option value="123">Miércoles 16 de Septiembre</option>
+						<option value="124">Jueves 17 de Septiembre</option>
+						<option value="125">Viernes 18 de Septiembre</option>
+						<option value="126">Sábado 19 de Septiembre</option>
+						<option value="127">Lunes 21 de Septiembre</option>
+						<option value="128">Martes 22 de Septiembre</option>
+						<option value="129">Miércoles 23 de Septiembre</option>
+						<option value="130">Jueves 24 de Septiembre</option>
+						<option value="131">Viernes 25 de Septiembre</option>
+						<option value="132">Sábado 26 de Septiembre</option>
+						<option value="133">Lunes 28 de Septiembre</option>
+						<option value="134">Martes 29 de Septiembre</option>
+						<option value="135">Miércoles 30 de Septiembre</option>
+						<option value="136">Jueves 01 de Octubre</option>
+						<option value="137">Viernes 02 de Octubre</option>
+						<option value="138">Sábado 03  de Octubre</option>
+						<option value="139">Lunes 05 de Octubre</option>
+						<option value="140">Martes 06 de Octubre</option>
+						<option value="141">Miércoles 07 de Octubre</option>
+						<option value="142">Jueves 08 de Octubre</option>
+						<option value="143">Viernes 09 de Octubre</option>
+						<option value="144">Sábado 10 de Octubre</option>
+						<option value="145">Lunes 12 de Octubre</option>
+						<option value="146">Martes 13 de Octubre</option>
+						<option value="147">Miércoles 14 de Octubre</option>
+						<option value="148">Jueves 15 de Octubre</option>
+						<option value="149">Viernes 16 de Octubre</option>
+						<option value="150">Sábado 17 de Octubre</option>
+						<option value="151">Lunes 19 de Octubre</option>
+						<option value="152">Martes 20 de Octubre</option>
+						<option value="153">Miércoles 21 de Octubre</option>
+						<option value="154">Jueves 22 de Octubre</option>
+						<option value="155">Viernes 23 de Octubre</option>
+						<option value="156">Sábado 24 de Octubre</option>
+						<option value="157">Lunes 26 de Octubre</option>
+						<option value="158">Martes 27 de Octubre</option>
+						<option value="159">Miércoles 28 de Octubre</option>
+						<option value="160">Jueves 29 de Octubre</option>
+						<option value="161">Viernes 30 de Octubre</option>
+						<option value="162">Sábado 31 de Octubre</option>
+						<option value="163">Lunes 02 de Noviembre</option>
+						<option value="164">Martes 03 de Noviembre</option>
+						<option value="165">Miércoles 04 de Noviembre</option>
+						<option value="166">Jueves 05 de Noviembre</option>
+            <option value="167">Viernes 06 de Noviembre</option>-->
+    
+            <option value="176">Sabado 05 de Diciembre</option>
+   
+            <option value="179">Miercoles 09 de Diciembre</option>
+            <option value="180">Jueves 10 de Diciembre</option>
+            <option value="181">Viernes 11 de Diciembre</option>
+           <!--       <option value="182">Sabado 12 de Diciembre</option>
+               <option value="183">Lunes 14 de Diciembre</option>       
+            <option value="184">Martes 15 de Diciembre</option>
+            <option value="185">Miercoles 16 de Diciembre</option>
+            <option value="186">Jueves 17 de Diciembre</option>
+            <option value="187">Vienes 18 de Diciembre</option>
+            <option value="188">Sabado 19 de Diciembre</option>
+            <option value="188">Lunes 21 de Diciembre</option>
+            <option value="190">Martes 22 de Diciembre</option>
+            <option value="191">Miercoles 23 de Diciembre</option>
+            <option value="192">Jueves 24 de Diciembre</option>            
+            <option value="193">Sabado 26 de Diciembre</option>            
+            <option value="194">Lunes 28 de Diciembre</option>
+            <option value="195">Martes 30 de Diciembre</option>
+            <option value="196">Miercoles 31 de Diciembre</option>    -->        
+						</select>
+                	</td>
+                </tr>
+                
+                <tr class="abajo">
+                	<td><p style="text-align:left;">Horarios</p></td>
+                	<td>
+                		<select name="rango">
+                        <option value="1">Entre 08:00 / 08:30</option>
+                        <option value="2">Entre 08:30 / 09:00</option>
+                        <option value="3">Entre 09:00 / 09:30</option>
+                        <option value="4">Entre 09:30 / 10:00</option>
+                        <option value="5">Entre 10:00 / 10:30</option>
+                        <option value="6">Entre 10:30 / 11:00</option>
+                        <option value="7">Entre 11:00 / 11:30</option>
+                        <option value="8">Entre 11:30 / 12:00</option>
+                        <option value="9">Entre 12:00 / 12:30</option>
+                        <option value="10">Entre 12:30 / 13:00</option>
+                        <option value="11">Entre 13:00 / 13:30</option>
+                        <option value="12">Entre 13:30 / 14:00</option>
+						            <option value="13">Entre 14:00 / 14:30</option>
+						            <option value="14">Entre 14:30 / 15:00</option>
+						            <option value="15">Entre 15:00 / 15:30</option>
+                        <option value="16">Entre 15:30 / 16:00</option>
+                        <option value="17">Entre 16:00 / 16:30</option>
+                        <option value="18">Entre 17:00 / 17:30</option>
+                        <option value="16">Entre 17:30 / 18:00</option>
+                        <option value="16">Entre 18:00 / 18:30</option>
+                        <option value="16">Entre 18:30 / 19:00</option>
+                        
+						
+                    	</select>
+                	</td>
+                </tr>
+                <tr>
+                	<td>&nbsp;</td>
+                </tr>
+                <tr class="abajo">
+                	<td></td>
+                	<td style="text-align:center"><input type="submit" name="button" id="button" value="Solicitar Turno"</td>
+                	<td></td>
+               	</tr>
+                
+                </table> <!-- TABLA INTERNA -->
+        </td>
+        </tr>
+        <tr></tr>  
+            
+		</table>  <!-- TABLA EXTERNA -->
+		
+		<tr>
+			<td>&nbsp;</td>
+		</tr> 
+		<tr>
+            <td colspan="4" align="left">
+            	<fieldset>
+                <legend class="botones_arribaCopiaCopia" align= "center">Información útil</legend>
+            	<table width="736" border="0" cellpadding="0" cellspacing="0">
+            	  <tr>
+	                <td  class="botones_arribaCopiaCopia" width="683"><p style="text-align:center; ">Si ya registraste tu turno, puedes acceder a tu comprobante ingresando <b><a style="text-align:center; color:black;" href="http://credifiar.com.ar/web/comprobantes.html"> *AQUÍ*</a><b> </p> </td>
+	              </tr>
+	              <tr>
+	                <td  class="botones_arribaCopiaCopia" width="683"><p style="text-align:center; ">Si registraste tu turno y quieres anularlo, puedes hacerlo ingresando <b><a style="text-align:center; color:black;" href="http://credifiar.com.ar/web/anularturno.html"> *AQUÍ*</a><b> </p> </td>
+	              </tr>
+	              <tr>
+	                <td  class="botones_arribaCopiaCopia" width="683"><p style="text-align:center; ">Puede que haya muchos usuarios solicitando el turno en éste momento.</p></td>
+	              </tr>
+	              <tr>
+	                <td  class="botones_arribaCopiaCopia" width="683"><p style="text-align:center; ">Si notas alguna demora, por favor intenta en unos minutos. Gracias!</p></td>
+	              </tr>
+	              <tr>
+	                <td  class="botones_arribaCopiaCopia" width="683"><p style="text-align:center; ">Ante cualquier problema para obtener tu turno, comunicate con nosotros por nuestro chat online.</p></td>
+	              </tr>
+	              
+	              
+            	</table>
+            	</fieldset>
+            </td>
+        </tr>
+		</table>
+	</td>
+    </form></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
